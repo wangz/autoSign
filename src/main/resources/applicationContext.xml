@@ -45,7 +45,7 @@
 	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
 		<property name="jobDetail" ref="jobDetail" />
 		<!-- 8:48:45  moofeel sign everyday-->
-		<property name="cronExpression"  value="* 59 8 * * ?" />
+		<property name="cronExpression"  value="10 59 8 * * ?" />
 	</bean>
 
 <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
