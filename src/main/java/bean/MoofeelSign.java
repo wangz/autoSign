@@ -181,7 +181,7 @@ public class MoofeelSign {
 		 if (login()) {
 			 boolean isfind = false;
 			 //找到最新一条，如果没有则等待一下继续找
-			 while(!isfind){
+			 while(!isfind && count<=500){
 				 System.out.println("第"+count++ + "次尝试");
 				try {
 					Document doc = Jsoup.parse(getText(site));
